@@ -1,0 +1,6 @@
+name: WorldClear
+version: ${project.version}
+main: dev.nxms.worldclear.WorldClear
+api-version: '1.21'
+author: nxmsdev
+website: https://www.nxms.dev
