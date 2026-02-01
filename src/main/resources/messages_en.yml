@@ -1,0 +1,38 @@
+# WorldClear Messages
+
+# Prefix definitions - use these in messages with {prefix-name}
+prefix-error: "&8[&c&l❌&r&8]&r"
+prefix-success: "&8[&a&l✔&r&8]&r"
+prefix-warning: "&8[&e&l!&r&8]&r"
+prefix-hint: "&8[&e&l?&r&8]&r"
+
+# General messages
+no-permission: "{prefix-error} &cYou don't have permission!"
+no-console: "{prefix-error} &cThis command can only be executed by a player."
+unknown-command: "{prefix-error} &cUnknown subcommand!"
+usage: "{prefix-hint} &7Usage: &e/worldclear &7<&eclear&7|&eon&7|&eoff&7|&ereload&7|&eset&7|&einfo&7>"
+
+# Clear messages
+clear-success: "{prefix-success} &7Successfully cleared &a{count} &7items from the world."
+clear-countdown: "{prefix-warning} &7World will be cleared in &e{seconds}s&7!"
+clear-now: "{prefix-info} &7Clearing dropped items..."
+
+# Toggle messages
+enabled: "{prefix-success} &7Auto clear has been &aenabled&a."
+disabled: "{prefix-success} &7Auto clear has been &cdisabled&7."
+already-enabled: "{prefix-error} &cAuto clear is already enabled."
+already-disabled: "{prefix-error} &cAuto clear is already disabled."
+
+# Set messages
+set-success: "{prefix-success} &7Clear interval has been set to &a{interval}&7."
+set-usage: "{prefix-hint} &7Usage: &e/worldclear set <interval>"
+set-invalid-format: "{prefix-error} &cInvalid format!\n{prefix-hint} &7Example of use: &e1d2h30m &7or &e30m &7or &e1h"
+set-invalid-value: "{prefix-error} &cInterval must be at least 1 minute."
+
+# Reload messages
+reload-success: "{prefix-success} &aConfiguration has been reloaded."
+reload-failed: "{prefix-error} &cFailed to reload configuration."
+
+# Status messages
+status-enabled: "&8• &7Auto clear is currently &aenabled&7. Next clear in &e{time}&7."
+status-disabled: "&8• &7Auto clear is currently &cdisabled&7."

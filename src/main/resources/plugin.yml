@@ -4,3 +4,46 @@ main: dev.nxms.worldclear.WorldClear
 api-version: '1.21'
 author: nxmsdev
 website: https://www.nxms.dev
+description: A plugin for clearing dropped items from the world
+
+commands:
+  worldclear:
+    description: Main command for WorldClear plugin
+    usage: /<command> <clear|on|off|reload|set>
+    permission: worldclear.command
+    aliases:
+      - wc
+
+permissions:
+  worldclear.admin:
+    description: Access to all WorldClear commands
+    default: op
+    children:
+      worldclear.clear: true
+      worldclear.on: true
+      worldclear.off: true
+      worldclear.reload: true
+      worldclear.set: true
+      worldclear.command: true
+      worldclear.info: true
+  worldclear.command:
+    description: Access to see WorldClear commands
+    default: op
+  worldclear.clear:
+    description: Access to /worldclear clear command
+    default: op
+  worldclear.on:
+    description: Access to /worldclear on command
+    default: op
+  worldclear.off:
+    description: Access to /worldclear off command
+    default: op
+  worldclear.reload:
+    description: Access to /worldclear reload command
+    default: op
+  worldclear.set:
+    description: Access to /worldclear set command
+    default: op
+  worldclear.info:
+    description: Access to /worldclear info command
+    default: op

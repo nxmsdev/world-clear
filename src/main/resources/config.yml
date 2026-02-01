@@ -1,0 +1,20 @@
+# WorldClear Configuration
+# Author: nxmsdev
+# Website: https://www.nxms.dev
+
+# Language setting (e.g., en, pl, de)
+# If the language file doesn't exist, it will fallback to English
+language: en
+
+# Auto clear settings
+auto-clear:
+  # Whether auto clear is enabled on startup
+  enabled: true
+  # Interval between clears (supports: Xd, Xh, Xm format)
+  # Examples: 30m, 1h, 2h30m, 1d, 1d12h
+  interval: 30m
+
+# Countdown settings
+countdown:
+  # How many seconds before clear to start countdown
+  start-at: 10
